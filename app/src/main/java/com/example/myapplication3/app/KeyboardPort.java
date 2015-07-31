@@ -83,7 +83,7 @@ public class KeyboardPort extends Activity implements  SensorEventListener {
         File sdcard = Environment.getExternalStorageDirectory();
         InputStream stream =  getResources().openRawResource(R.raw.expiriment);
 //Get the text file
-        File file = new File(sdcard,"Expiriment1_Text.text");
+        File file = new File(sdcard,"Expiriment1_Text.txt");
         if(file.exists()) {
 
 //Read text from file
@@ -389,8 +389,8 @@ public class KeyboardPort extends Activity implements  SensorEventListener {
 
 
 
-        Intent i = new Intent(getApplicationContext(),KeyboardLand.class);
-        i.putExtra("strings",strings);
+        Intent i = new Intent(getApplicationContext(),KeyboardPort2.class);
+//        i.putExtra("strings",strings);
         i.putExtra("num", Id);
         startActivity(i);
         finish();

@@ -29,7 +29,6 @@
         <activity
             android:name=".TouchSampler"
             android:label="@string/title_activity_touch_sampler"
-
             android:screenOrientation="portrait" >
         </activity>
         <activity
@@ -43,7 +42,9 @@
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
@@ -57,6 +58,14 @@
         <activity
             android:name=".ThankYou"
             android:label="@string/title_activity_thank_you" >
+        </activity>
+        <activity
+            android:name=".KeyboardPort2"
+            android:label="@string/title_activity_keyboard_port2" >
+        </activity>
+        <activity
+            android:name=".KeyboardPort3"
+            android:label="@string/title_activity_keyboard_port3" >
         </activity>
     </application>
 
